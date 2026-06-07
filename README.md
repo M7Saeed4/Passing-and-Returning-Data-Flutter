@@ -19,4 +19,8 @@ A Flutter application demonstrating how to pass data to a new screen and return 
 ## Navigation
 - `Navigator.push` navigates to DetailScreen and passes product data
 - `Navigator.pop` returns to ProductListScreen with a confirmation message
+<<<<<<< HEAD
 - Result is displayed in a **SnackBar**
+=======
+- Result is displayed in a **SnackBar**
+>>>>>>> fab734254ac5ddfa741ccffd285d14ff284ba8d9
