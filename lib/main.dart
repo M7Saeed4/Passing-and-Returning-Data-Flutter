@@ -25,8 +25,6 @@ class MyApp extends StatelessWidget {
   }
 }
 
-// ─── Product Model ─────────────────────────────────────────────────────────────
-
 class Product {
   final String name;
   final String description;
@@ -42,8 +40,6 @@ class Product {
     required this.category,
   });
 }
-
-// ─── Products Data ─────────────────────────────────────────────────────────────
 
 const List<Product> products = [
   Product(
@@ -74,8 +70,6 @@ const List<Product> products = [
     category: 'Audio',
   ),
 ];
-
-// ─── PRODUCT LIST SCREEN ───────────────────────────────────────────────────────
 
 class ProductListScreen extends StatefulWidget {
   const ProductListScreen({super.key});
@@ -280,8 +274,6 @@ class _ProductListScreenState extends State<ProductListScreen> {
   }
 }
 
-// ─── PRODUCT DETAIL SCREEN ─────────────────────────────────────────────────────
-
 class ProductDetailScreen extends StatelessWidget {
   final Product product;
 
@@ -293,7 +285,6 @@ class ProductDetailScreen extends StatelessWidget {
       backgroundColor: const Color(0xFFF5F5F7),
       body: CustomScrollView(
         slivers: [
-          // Sliver AppBar with image
           SliverAppBar(
             expandedHeight: 300,
             pinned: true,
@@ -422,7 +413,6 @@ class ProductDetailScreen extends StatelessWidget {
                     height: 54,
                     child: ElevatedButton(
                       onPressed: () {
-                        // POP: return to ProductListScreen with a result message
                         Navigator.pop(
                             context, 'تمت مشاهدة ${product.name} بنجاح ✓');
                       },
